@@ -163,6 +163,20 @@ span{
     box-shadow: none;
 }
 
+.btnSet{
+    display: flex;
+    align-items: center;
+}
+
+.btnSet .github-logo{
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+    margin-left: 1rem;
+}
+
 .about{
     display: flex;
     justify-content: center;
