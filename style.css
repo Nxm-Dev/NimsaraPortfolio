@@ -229,6 +229,29 @@ span{
     font-size: 1.6rem;
 }
 
+.ShowAvail .MainDet{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: .6rem;
+}
+
+.ShowAvail img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.ShowAvail{
+    margin-bottom: 2rem;
+}
+
+.Available img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: .5rem;
+}
+
 .social-media a{
     display: inline-flex;
     justify-content: center;
