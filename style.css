@@ -308,13 +308,16 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    background: var(--second-color);
+    gap: 5rem;
+    background: var(--bg-color);
 }
 
 .about-img img{
     width: 35vw;
+    border-radius: 30%;
     animation: floatImage 3s ease infinite;
+    border: .2rem solid var(--text-color);
+    padding: 1rem;
 }
 
 @keyframes floatImage{
@@ -346,6 +349,51 @@ span{
 .about-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.tech-stack{
+    min-height: 70vh;
+    background: var(--second-color);
+}
+.tech-stack-container{
+    /* border: 2px solid var(--main-color); */
+    margin-top: 5rem;
+}
+
+.tech-stack-container .tech-row1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    /* border: 2px solid var(--main-color); */
+}
+
+.tech-stack-container .tech-row1 img{
+    width: 8rem;
+    height: 8rem;
+    animation: floatImage2 3s ease infinite;
+}
+
+@keyframes floatImage2{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.tech-stack-container .tech-row1 h3{
+    font-size:1.7rem;
+    margin-top: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .services h2{
