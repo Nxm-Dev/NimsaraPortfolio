@@ -332,15 +332,6 @@ span{
     }
 }
 
-@keyframes leftToRight{
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(100%);
-    }
-}
-
 .heading{
     text-align: center;
     font-size: 4.5rem;
@@ -358,10 +349,6 @@ span{
 .about-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-}
-
-.about-content p{
-    animation: leftToRight 1s ease;
 }
 
 .Skill-tech{
