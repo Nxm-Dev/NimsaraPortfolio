@@ -351,12 +351,28 @@ span{
     margin: 2rem 0 3rem;
 }
 
+.Skill-tech{
+    display: flex;
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.Skill-tech ul:last-child
+{
+    margin-left: 3rem;
+}
+
+.Skill-tech ul li{
+    font-size: 1.6rem;
+    margin-right: 2rem;
+}
+
+
 .tech-stack{
     min-height: 70vh;
     background: var(--second-color);
 }
 .tech-stack-container{
-    /* border: 2px solid var(--main-color); */
     margin-top: 5rem;
 }
 
@@ -367,7 +383,6 @@ span{
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 3rem;
-    /* border: 2px solid var(--main-color); */
 }
 
 .tech-stack-container .tech-row1 img{
@@ -588,6 +603,7 @@ span{
     font-size: 2.4rem;
     color: var(--second-color);
 }
+
 
 /* Resposive Points */
 
