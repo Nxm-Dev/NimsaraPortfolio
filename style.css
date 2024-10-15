@@ -750,12 +750,14 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
-    .work-exp .exp-content .exp-box .bar-upper{
+    .work-exp .exp-content .exp-box .bar-upper,
+    .Eduction .eduction-Box .exp-content-bars .exp-box .bar-upper{
         flex-direction: column;
         align-items: flex-start;
         width: inherit;
     }
-    .work-exp .exp-content .exp-box .bar-upper h4{
+    .work-exp .exp-content .exp-box .bar-upper h4,
+    .Eduction .eduction-Box .exp-box .bar-upper h4{
         margin-bottom: 0.5rem;
         width: 25rem;
     }
