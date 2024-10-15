@@ -810,6 +810,7 @@ span{
     height: inherit;
     border-left: 3px solid var(--main-color);
     padding: 1rem;
+    margin-bottom: 3rem;
 }
 .work-exp .exp-content .exp-content-bars{
     margin-top: 5rem;
