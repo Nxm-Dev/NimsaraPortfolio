@@ -785,14 +785,15 @@ span{
 }
 
 .Hero{
-    width: 70%;
+    width: 100%;
     text-align: justify;
     min-height: 5vh;
     background: var(--bg-color);
 }
 
 .Hero .about-section h3,
-.work-exp .exp-content h3
+.work-exp .exp-content h3,
+.Eduction .eduction-Box h3
 {
     font-weight: 600;
     margin-bottom: 1rem;
@@ -802,32 +803,38 @@ span{
 
 .work-exp{
     background : var(--second-color);
+    min-height: 70vh;
 }
 
-.work-exp .exp-content .exp-box{
+.work-exp .exp-content .exp-box,
+.Eduction .eduction-Box .exp-box{
     width: 70%;
     height: inherit;
     border-left: 3px solid var(--main-color);
     padding: 1rem;
     margin-bottom: 3rem;
 }
-.work-exp .exp-content .exp-content-bars{
+.work-exp .exp-content .exp-content-bars,
+.Eduction .eduction-Box .exp-content-bars{
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
-.work-exp .exp-content .exp-box .bar-upper{
+.work-exp .exp-content .exp-box .bar-upper,
+.Eduction .eduction-Box .exp-box .bar-upper{
     display: flex;
     justify-content: space-between;
     margin-right: 1rem;
 }
 
-.work-exp .exp-content .exp-box h4{
+.work-exp .exp-content .exp-box h4,
+.Eduction .eduction-Box .exp-box h4{
     font-size: 1.8rem;
     font-weight: 400;
 }
 
-.work-exp .exp-content .exp-box .bar-upper .present-time{
+.work-exp .exp-content .exp-box .bar-upper .present-time,
+.Eduction .eduction-Box .exp-box .bar-upper .present-time{
     background: var(--btn-color);
     color: var(--text-color);
     padding: .2rem 1rem;
@@ -838,22 +845,35 @@ span{
     align-items: center;
 }
 
-.work-exp .exp-content .exp-box .bar-upper .present-time p{
+.work-exp .exp-content .exp-box .bar-upper .present-time p,
+.Eduction .eduction-Box .exp-box .bar-upper .present-time p{
     font-size: .9rem;
     font-weight: 600;
     letter-spacing: .5px;
 }
 
-.work-exp .exp-content .exp-box .bar-lower{
+.work-exp .exp-content .exp-box .bar-lower,
+.Eduction .eduction-Box .exp-box .bar-lower{
     display: flex;
     justify-content: space-between;
     margin-top: .7rem;
 }
 
-.work-exp .exp-content .exp-box .bar-lower p{
+.work-exp .exp-content .exp-box .bar-lower p,
+.Eduction .eduction-Box .exp-box .bar-lower p{
     font-size: 1.2rem;
 }
-.work-exp .exp-content .exp-box .bar-lower p i{
+.work-exp .exp-content .exp-box .bar-lower p i,
+.Eduction .eduction-Box .exp-box .bar-lower p i{
     font-size: 1rem;
     margin-right: .5rem;
+}
+
+.Eduction{
+    background: var(--bg-color);
+    min-height: 70vh;
+}
+
+.exp-box1{
+    display: flex;
 }
