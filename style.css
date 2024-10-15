@@ -16,6 +16,8 @@
     --second-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
+    --exp-btn: #D7FFE0;
+    --btn-color: #01580a;
 
 }
 
@@ -713,6 +715,12 @@ span{
     .portfolio-container{
         grid-template-columns: 1fr;
     }
+
+    .bar-lower{
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 
 @media(max-width:450px)
@@ -743,6 +751,15 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
+    .work-exp .exp-content .exp-box .bar-upper{
+        flex-direction: column;
+        align-items: flex-start;
+        width: inherit;
+    }
+    .work-exp .exp-content .exp-box .bar-upper h4{
+        margin-bottom: 0.5rem;
+        width: 25rem;
+    }
 }
 
 @media (max-width:365px)
@@ -759,4 +776,86 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
+}
+
+
+/* About page Styles */
+
+.header{
+    background: var(--second-color);
+}
+
+.Hero{
+    width: 70%;
+    text-align: justify;
+    min-height: 5vh;
+    background: var(--bg-color);
+}
+
+.Hero .about-section h3,
+.work-exp .exp-content h3
+{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: start;
+    font-size: 3.5rem;
+}
+
+.work-exp{
+    background : var(--second-color);
+}
+
+.work-exp .exp-content .exp-box{
+    width: 70%;
+    height: inherit;
+    border-left: 3px solid var(--main-color);
+    padding: 1rem;
+}
+.work-exp .exp-content .exp-content-bars{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.work-exp .exp-content .exp-box .bar-upper{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.work-exp .exp-content .exp-box h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.work-exp .exp-content .exp-box .bar-upper .present-time{
+    background: var(--btn-color);
+    color: var(--text-color);
+    padding: .2rem 1rem;
+    border-radius: 20px;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-exp .exp-content .exp-box .bar-upper .present-time p{
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.work-exp .exp-content .exp-box .bar-lower{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: .7rem;
+}
+
+.work-exp .exp-content .exp-box .bar-lower p{
+    font-size: 1rem;
+    /* font-weight: 00; */
+}
+.work-exp .exp-content .exp-box .bar-lower p i{
+    font-size: 1rem;
+    margin-right: .5rem;
 }
