@@ -142,7 +142,7 @@ section {
     text-decoration: none;
     display: block;
     font-size: 14px;
-    margin-left: 1rem!important;
+    margin-left: 1rem !important;
 }
 
 
@@ -740,7 +740,7 @@ span {
         margin-left: 0;
     }
 
-    .header .navbar .dropdown button{
+    .header .navbar .dropdown button {
         background-color: var(--bg-color);
         padding: 0;
         margin-bottom: 2rem;
@@ -961,4 +961,103 @@ span {
 
 .exp-box1 {
     display: flex;
+}
+
+
+/* End of About page Styles */
+
+/* Blog 1 // Artificial intelligence (AI) vs. machine learning (ML) CSS */
+
+.Blog {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    min-height: 70vh;
+}
+
+.Blog-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blogIntro {
+    margin-top: 5rem;
+}
+
+.left-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.left-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.right-Intro {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-Intro h4,
+.left-intro h4 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.right-Intro p,
+.left-intro p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.IntroDes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 20px;
+    background: var(--second-color);
+    min-height: 50vh;
+    margin: 0;
+
+}
+
+.left-intro,
+.right-Intro {
+    flex: 1;
+    padding: 15px;
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .blogIntro {
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    .blogIntro {
+        flex-direction: column;
+    }
+
+    .left-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .IntroDes {
+        flex-direction: column;
+    }
 }
