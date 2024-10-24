@@ -1063,6 +1063,10 @@ span {
     color: var(--main-color);
 }
 
+.explain-content h4{
+    margin-top: 3rem;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     .blogIntro {
