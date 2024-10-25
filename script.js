@@ -1,44 +1,48 @@
-let section = document.querySelectorAll('section');
-let navlink = document.querySelectorAll('header nav a');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 let menuIcon = document.querySelector('#menu-icon');
 let nav = document.querySelector('.navbar');
 
-// Handle scroll events
+
 window.onscroll = () => {
-    section.forEach(sec => {
-        let top = window.scrollY;
+    let top = window.scrollY;
+
+    sections.forEach(sec => {
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
+        
         if (top >= offset && top < offset + height) {
-            navlink.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(id)) {
+                    link.classList.add('active');
+                }
             });
         }
     });
 
-    // Make header sticky after scrolling past 100px
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
+    
+    document.querySelector('header').classList.toggle('sticky', top > 100);
 };
 
-// Handle menu toggle
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     nav.classList.toggle('active');
 };
 
-// Close the menu when a nav link is clicked
-navlink.forEach(link => {
+
+navLinks.forEach(link => {
     link.addEventListener('click', () => {
         menuIcon.classList.remove('bx-x');
         nav.classList.remove('active');
     });
 });
 
-// ScrollReveal configurations
+
+
 ScrollReveal({
     distance: '80px',
     duration: 2000,
